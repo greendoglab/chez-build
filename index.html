@@ -10,6 +10,7 @@
 <meta name="description" content="" />
 
 <!-- Render -->
+<link rel="stylesheet" href="css/font.css" type="text/css" />
 <link rel="stylesheet" href="css/style.css" type="text/css" />
 
 <!--[if lt IE 9]>
@@ -17,7 +18,8 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<!-- <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
+<script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="js/jquery.cycle.all.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/func.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
@@ -83,29 +85,29 @@
 
     <!-- .events -->
     <section class="events">
-        <h3>Events</h3>
+        <h3 class="title">Events</h3>
         <div class="decor_line"></div><!-- .decor_line decor element -->
-        <img src="" alt="">
+        <img src="images/tmp/events.jpg" alt="" class="event_image">
     </section>
     <!-- /.events -->
 
-    <!-- .menu -->
-    <nav class="menu">
-        <h3>
+    <!-- .menus -->
+    <nav class="menus">
+        <h3 class="title">
             <span>Menus</span>
-            <span>click links to view menus</span>
+            <span class="click_to_view">click links to view menus</span>
         </h3>
         <div class="decor_line"></div><!-- .decor_line decor element -->
-        <ul>
+        <ul class="links_list">
             <li><a href="">menu</a></li>
             <li><a href="">menu</a></li>
         </ul>
     </nav>
-    <!-- /.menu -->
+    <!-- /.menus -->
 
     <!-- .gallery -->
     <section class="gallery">
-        <h3>Gallery</h3>
+        <h3 class="title">Gallery</h3>
         <div class="decor_line"></div><!-- .decor_line decor element -->
         <!-- .gallery_box - container for images rotate -->
         <div class="gallery_box">
@@ -125,7 +127,7 @@
 
     <!-- .about -->
     <section class="about">
-        <h3>About</h3>
+        <h3 class="title">About</h3>
         <div class="decor_line"></div><!-- .decor_line decor element -->
         <article>
             <p>
@@ -136,7 +138,7 @@
             </p>
         </article>
         <aside>
-            <ul>
+            <ul class="links_list">
                 <li><a href="">Link 1</a></li>
                 <li><a href="">Link 2</a></li>
                 <li><a href="">Link 3</a></li>
