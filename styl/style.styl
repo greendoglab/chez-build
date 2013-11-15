@@ -1,0 +1,77 @@
+// functions
+
+transition(p, d, t)
+    -webkit-transition-property: p;
+    -webkit-transition-duration: d;
+    -webkit-transition-timing-function: t;
+    -moz-transition-property: p;
+    -moz-transition-duration: d;
+    -moz-transition-timing-function: t;
+    -o-transition-property: p;
+    -o-transition-duration: d;
+    -o-transition-timing-function: t;
+
+// variables
+
+border_bottom_solid = 1px dashed rgba(63, 11, 11, 0.3);
+text_color = #201818
+link_color = #1783b6
+link_hover_color = #1783b6
+title_color = #1783b6
+
+body
+    font: 150%/160% Georgia, serif
+    padding 0
+    margin 0
+    background #000 url(../images/main_back.png)
+    color text_color
+
+h1, h2, h3, h4, h5
+    font-weight normal
+
+a
+    color link_color
+    transition(all, 0.3s, ease)
+    &:hover
+        color link_hover_color
+        text-decoration none
+
+img
+    max-width 100%
+    display block
+    text-align center
+    margin auto
+
+.if iframe,
+.if object,
+.if embed
+  /*position: absolute;*/
+  max-width 100%
+
+
+.site_nav
+    display none
+
+.container
+    width 646px
+    margin 0 auto
+    background #fff
+    border 1px solid #a5a5a5
+    border-top none
+
+.site_header
+    overflow hidden
+    .logo
+        float left
+    .opening
+        float right
+
+.welcome
+    overflow hidden
+    article
+        float left
+    .info 
+        float right
+
+// @media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+// @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
